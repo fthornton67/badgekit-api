@@ -27,8 +27,6 @@ applyRoutes(server);
 
 module.exports = server;
 
-process.env.PORT = 8181;
-
 if (!module.parent) {
   server.listen(process.env.PORT || 8080, function () {
     console.log('%s listening at %s', server.name, server.url);
